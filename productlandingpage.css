@@ -1,0 +1,131 @@
+/* variables  */
+:root{
+    --light-color:rgba(232, 232, 232, 1);
+    --dark-color: rgba(46, 49, 49, 1);
+    --box-color:rgba(243, 241, 239, 1);
+--box-shadow:}
+
+    /* button  */
+ .btn{background-color: rgba(248, 148, 6, 1); 
+        padding: 10px;
+        font-weight: bold;}
+.btn a{text-decoration: none;
+color: black;}
+.btn a:hover{text-decoration: underline;
+}
+
+    
+    /* body  */
+body{background-color: var(--light-color);
+    padding: 1.5rem; display: grid;}
+
+    /* header  */
+.header{display: grid;
+     grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2em;
+     background-color: var(--light-color);
+ } 
+    
+
+
+.top-nav ul{list-style-type: none;
+        padding: none;
+        margin: none; 
+        display: inline;
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        }
+
+.sticky{ position: fixed;
+width: 90%;
+top: 0;}
+
+.top-nav li a{text-decoration: none;
+        color: black;
+        background-color: var(--light-color);
+        color: black;
+        padding: 10px;
+        font-size: 1.5em;}
+     
+.top-nav li a:hover{text-decoration:underline;
+background-color: var(--dark-color);
+color: var(--light-color);}
+
+    /* top container  */
+
+.top-container{display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    margin: 4em;
+    justify-content: center;
+    align-content: end;}
+
+
+
+.top-container h2{grid-area:1/2/2/3;}
+.top-container input{grid-area: 2/2/3/3;}
+.top-container button{grid-area: 3/2/4/3;}
+
+/* main  */
+
+.main{
+     display: grid;
+     justify-content: center;
+     align-content: center;
+    padding: 50px;}
+    
+/* video  */
+.video{ display: grid;
+    justify-content: center;
+    align-content: center;}
+
+ /* bottom container  */
+.boxes{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: auto;
+     grid-gap: 2em;
+     margin: 50px; 
+}
+.box{
+    border: solid black;
+    padding: 20px;
+} 
+
+
+ .box h3{
+    font-size: 2em; 
+}  
+
+.boxes{
+  text-align: center;
+}
+ .box .price{
+    font-size: 2em;
+}  
+/* footer  */
+
+.bottom-nav ul{
+    list-style-type: none;
+        padding: none;
+        margin: none; 
+        display: inline;
+        display: flex;
+       justify-content: space-around;} 
+
+.bottom-nav li a{
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+.bottom-nav li a:hover{text-decoration:underline;}
+
+footer{
+    background-color: var(--dark-color);
+    padding: 5px;
+
+}
+
+footer p{color: var(--light-color);}
